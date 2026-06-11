@@ -47,7 +47,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
   border-bottom:1px solid transparent;transition:border-color .3s}
 nav.scrolled{border-bottom-color:var(--line)}
 .logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.2rem;letter-spacing:-.02em;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
-.logo-mark{width:32px;height:32px;border-radius:10px;background:var(--navy);position:relative;overflow:hidden;flex-shrink:0}
+.logo-mark{height:38px;width:auto;flex-shrink:0;object-fit:contain}
 .logo-mark::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,var(--electric) 40%,var(--electric) 60%,transparent 60%);animation:shimmer 3s ease-in-out infinite}
 @keyframes shimmer{0%,100%{transform:translateX(-110%)}50%{transform:translateX(110%)}}
 .nav-links{display:flex;gap:28px;align-items:center}
@@ -283,7 +283,7 @@ footer{padding:60px 5vw 40px;max-width:1340px;margin:0 auto;border-top:1px solid
 <div class="orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
 
 <nav id="nav">
-  <a href="index.html" class="logo"><span class="logo-mark"></span>Velo Capital Funding</a>
+  <a href="index.html" class="logo"><img src="velo-logo.png" alt="Velo Capital Funding" class="logo-mark">Velo Capital Funding</a>
   <div class="nav-links">
     <a href="how-it-works.html" data-page="how-it-works">How It Works</a>
     <a href="funding-options.html" data-page="funding-options">Funding Options</a>
@@ -291,7 +291,7 @@ footer{padding:60px 5vw 40px;max-width:1340px;margin:0 auto;border-top:1px solid
     <a href="contact.html" data-page="contact">Contact</a>
     <div class="nav-contact">
       <a href="tel:+12055090217">+1 (205) 509-0217</a>
-      <a href="mailto:nloeb@vcfus.com">nloeb@vcfus.com</a>
+      <a href="mailto:info@vcfus.com">info@vcfus.com</a>
     </div>
     <a href="contact.html#apply" class="btn btn-primary">Apply Now</a>
   </div>
@@ -400,7 +400,7 @@ footer{padding:60px 5vw 40px;max-width:1340px;margin:0 auto;border-top:1px solid
 <footer>
   <div class="foot-grid">
     <div>
-      <a href="index.html" class="logo"><span class="logo-mark"></span>Velo Capital Funding</a>
+      <a href="index.html" class="logo"><img src="velo-logo.png" alt="Velo Capital Funding" class="logo-mark">Velo Capital Funding</a>
       <p class="foot-tag">Strategic funding solutions for growing businesses.</p>
     </div>
     <div class="foot-col">
@@ -414,7 +414,7 @@ footer{padding:60px 5vw 40px;max-width:1340px;margin:0 auto;border-top:1px solid
     <div class="foot-col">
       <h5>Contact</h5>
       <a href="tel:+12055090217">+1 (205) 509-0217</a>
-      <a href="mailto:nloeb@vcfus.com">nloeb@vcfus.com</a>
+      <a href="mailto:info@vcfus.com">info@vcfus.com</a>
     </div>
   </div>
   <div class="foot-bottom">
