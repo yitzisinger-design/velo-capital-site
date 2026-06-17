@@ -555,6 +555,10 @@ if(formShell){
     if(cur===totalSteps){
       const email=document.getElementById('femail');
       if(!email.value.includes('@')){email.style.borderColor='#E5484D';email.focus();return;}
+      const _d={access_key:'9311f9df-fbf5-487a-a57f-bb77ea8cc0c6',subject:'New funding application — Velo Capital Funding',from_name:'Velo Capital Website'};
+      formShell.querySelectorAll('.pills[data-field]').forEach(g=>{const s=g.querySelector('.pill.sel');_d[g.dataset.field]=s?s.textContent.trim():'';});
+      {const n=document.getElementById('fname'),b=document.getElementById('fbiz'),e=document.getElementById('femail'),p=document.getElementById('fphone');_d.name=n?n.value:'';_d.business=b?b.value:'';_d.email=e?e.value:'';_d.phone=p?p.value:'';}
+      fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(_d)}).catch(()=>{});
     }
     cur++;showStep(cur);
     formShell.scrollIntoView({behavior:'smooth',block:'center'});
